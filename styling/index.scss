@@ -1,0 +1,59 @@
+@import 'dist/animation.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url('../assets/images/01-weihnachtsmarkt-flensburg.jpg');
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:  repeat(10, 1fr);
+  grid-auto-rows: 10vh;
+
+  .grid-item {
+    border: 1px solid rgba(255,255,255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255, 1);
+    font-family: "Times New Roman", serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+}
+
+.backDoor {
+  background-color: red;
+  position: relative;
+  margin: 0 auto;
+  margin-top:50px;
+}
+
+.door {
+  //background-color: brown;
+  //position:absolute;
+  //top:0px;
+  //left:0px;
+  //width:200px;
+  //height:300px;
+
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.8s ease-in-out;
+}
+
+.doorOpen {
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
