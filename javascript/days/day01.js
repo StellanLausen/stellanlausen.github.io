@@ -1,26 +1,13 @@
 const wordText = document.querySelector(".word"),
 hintText = document.querySelector(".hint span"),
-timeText = document.querySelector(".time b"),
 inputField = document.querySelector("input"),
 refreshBtn = document.querySelector(".refresh-word"),
 checkBtn = document.querySelector(".check-word");
 
-let correctWord, timer;
-
-const initTimer = maxTime => {
-    clearInterval(timer);
-    timer = setInterval(() => {
-        if(maxTime > 0) {
-            maxTime--;
-            return timeText.innerText = maxTime;
-        }
-        alert(`Time off! ${correctWord.toUpperCase()} was the correct word`);
-        initGame();
-    }, 1000);
-}
+let correctWord;
+const presentCode = 2495;
 
 const initGame = () => {
-    initTimer(30);
     let randomObj = words[Math.floor(Math.random() * words.length)];
     let wordArray = randomObj.word.split("");
     for (let i = wordArray.length - 1; i > 0; i--) {
@@ -37,10 +24,19 @@ initGame();
 
 const checkWord = () => {
     let userWord = inputField.value.toLowerCase();
-    if(!userWord) return alert("Please enter the word to check!");
-    if(userWord !== correctWord) return alert(`Oops! ${userWord} is not a correct word`);
-    alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`);
+    if(!userWord) return alert("Sachmal!? Gib erstmal ein Wort ein!");
+
+
+    if(userWord !== correctWord) return alert(`Oops! "${userWord}" das Wort habe ich aber nicht gemeint!`);
+
+
+    alert(`Yippeee ${correctWord.toUpperCase()} ist das korrekte Word!`);
+
     initGame();
+}
+
+const giveCode = () => {
+
 }
 
 refreshBtn.addEventListener("click", initGame);

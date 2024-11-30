@@ -45,6 +45,6 @@ let words = [
     },
     {
         word: "kaltenase",
-        hint: "its to words in one without a space, it gets really cold on you"
+        hint: "its two words in one without a space, it gets really cold on you"
     },
 ]
