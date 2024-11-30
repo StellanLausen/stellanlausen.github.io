@@ -1,6 +1,6 @@
 const debugMode = false;
-// const today = new Date().getDate();
-const today = 20;
+const today = new Date().getDate();
+// const today = 20;
 
 $(document).ready(function() {
     init();

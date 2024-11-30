@@ -8,6 +8,12 @@ let correctWord;
 let codeRuns = 0;
 const presentCode = "2495";
 
+const urlParams = new URLSearchParams(window.location.search);
+
+if(!urlParams.has('240112')){
+    // location.href = '../index.html';
+}
+
 const initGame = () => {
     let randomObj = words[Math.floor(Math.random() * words.length)];
     let wordArray = randomObj.word.split("");
