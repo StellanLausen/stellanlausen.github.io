@@ -1,6 +1,6 @@
 const debugMode = false;
-const today = new Date().getDate();
-// const today = 20;
+// const today = new Date().getDate();
+const today = 20;
 
 $(document).ready(function() {
     init();
@@ -23,7 +23,6 @@ function initDoorAnimation() {
             $(this).children( ".doorNumber" ).addClass('animated');
             redirectToDay();
         } else {
-            console.log("asd");
             $(this).children( ".doorNumber" ).addClass('headShake');
             $(this).children( ".doorNumber" ).addClass('animated');
             setTimeout(() => {
@@ -96,9 +95,3 @@ while (currentIndex !== 0) {
         array[randomIndex], array[currentIndex]];
 }
 }
-
-/* snippets
-*
-* (adventNumbers[i] < 10) ? "0" : "")
-*
-* */

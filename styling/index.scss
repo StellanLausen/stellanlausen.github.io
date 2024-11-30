@@ -37,8 +37,8 @@ $mobile-breakpoint-end: 450px;
 }
 
 #main {
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   background-image: url('../assets/images/1348846.png');
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -48,7 +48,7 @@ $mobile-breakpoint-end: 450px;
 .grid-container {
   display: grid;
   grid-template-columns:  repeat(10, 1fr);
-  grid-auto-rows: 10vh;
+  grid-auto-rows: 10dvh;
 
   .grid-item {
     border: 1px solid rgba(255,255,255, 0.5);
