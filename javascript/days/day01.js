@@ -5,7 +5,8 @@ refreshBtn = document.querySelector(".refresh-word"),
 checkBtn = document.querySelector(".check-word");
 
 let correctWord;
-const presentCode = 2495;
+let codeRuns = 0;
+const presentCode = "2495";
 
 const initGame = () => {
     let randomObj = words[Math.floor(Math.random() * words.length)];
@@ -23,14 +24,21 @@ const initGame = () => {
 initGame();
 
 const checkWord = () => {
+
+    if(codeRuns <= 4){
+        codeRuns++;
+    } else {
+        codeRuns = 1;
+    }
+
     let userWord = inputField.value.toLowerCase();
     if(!userWord) return alert("Sachmal!? Gib erstmal ein Wort ein!");
 
 
     if(userWord !== correctWord) return alert(`Oops! "${userWord}" das Wort habe ich aber nicht gemeint!`);
 
-
-    alert(`Yippeee ${correctWord.toUpperCase()} ist das korrekte Word!`);
+    console.log(presentCode.charAt(codeRuns - 1))
+    alert(`Yippeee ${correctWord.toUpperCase()} ist das richtige Word! Ein Teil von deinem Code ist ${presentCode.charAt(codeRuns - 1)}`);
 
     initGame();
 }

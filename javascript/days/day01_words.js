@@ -1,50 +1,50 @@
 let words = [
     {
         word: "nelo",
-        hint: "a wonderful person"
+        hint: "eine wundervolle person"
     },
     {
         word: "Tasche",
-        hint: "Something to carry something"
+        hint: "Etwas um Sachen zu tragen"
     },
     {
         word: "advent",
-        hint: "four special Sundays"
+        hint: "vier besondere Tage"
     },
     {
         word: "christmas",
-        hint: "come on you can get this"
+        hint: "das bekommt doch wohl hin ?"
     },
     {
         word: "bettina",
-        hint: "someone special for you"
+        hint: "jemand besonders für dich"
     },
     {
         word: "alexa",
-        hint: "someone special for you"
+        hint: "jemand besonderes für dich"
     },
     {
         word: "tortellinis",
-        hint: "you like this alot"
+        hint: "du magst das gerne"
     },
     {
         word: "spagetti",
-        hint: "i break this, you dont"
+        hint: "ich mache es kaputt, du nicht"
     },
     {
         word: "waermekissen",
-        hint: "you need it, i dont"
+        hint: "du brauchst es, ich nicht"
     },
     {
         word: "jahrmarkt",
-        hint: "i get sick of too much from it"
+        hint: "mir wird schlecht von zuviel"
     },
     {
         word: "mantel",
-        hint: "you are a big fan of wearing it"
+        hint: "das trägst du sehr gerne"
     },
     {
         word: "kaltenase",
-        hint: "its two words in one without a space, it gets really cold on you"
+        hint: "zwei Wörter, ohne Leerzeichen. Das bekommt du wenn dir kalt ist."
     },
 ]
