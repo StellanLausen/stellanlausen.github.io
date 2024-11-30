@@ -1,5 +1,6 @@
 const debugMode = false;
-const today = new Date().getDate();
+// const today = new Date().getDate();
+const today = 20;
 
 $(document).ready(function() {
     init();
@@ -22,8 +23,13 @@ function initDoorAnimation() {
             $(this).children( ".doorNumber" ).addClass('animated');
             redirectToDay();
         } else {
-            $(this).children( ".doorNumber" ).addClass('animated');
+            console.log("asd");
             $(this).children( ".doorNumber" ).addClass('headShake');
+            $(this).children( ".doorNumber" ).addClass('animated');
+            setTimeout(() => {
+            $(this).children( ".doorNumber" ).removeClass('headShake');
+            $(this).children( ".doorNumber" ).removeClass('animated');
+            }, 1000); // 10ms delay
         }
     });
 }

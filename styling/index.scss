@@ -1,16 +1,45 @@
 @import 'dist/animation.css';
 
+// variables
+$mobile-breakpoint-end: 450px;
+
 * {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
+/* FONTS Start */
+
+.merienda {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* FONTS End */
+
+@media (max-width: $mobile-breakpoint-end) {
+  .grid-container {
+    .grid-item {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (min-width: $mobile-breakpoint-end) {
+  .grid-container {
+    .grid-item {
+      font-size: 2.2rem;
+    }
+  }
+}
+
 #main {
   height: 100vh;
   width: 100vw;
-
-  background-image: url('../assets/images/01-weihnachtsmarkt-flensburg.jpg');
+  background-image: url('../assets/images/1348846.png');
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   background-position: center;
@@ -27,9 +56,6 @@
     justify-content: center;
     align-items: center;
     color: rgba(255,255,255, 1);
-    font-family: "Times New Roman", serif;
-    font-size: 2.2rem;
-    font-weight: bold;
   }
 }
 

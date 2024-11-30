@@ -1,27 +1,28 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Neles Advent</title>
-
-    <!-- import Style -->
+    <meta charset="utf-8">
+    <title>Word Scramble Game | CodingNepal</title>
     <link rel="stylesheet" href="../styling/days/day01.css">
-
-    <!-- import JS -->
-    <script src="../javascript/dist/jquery.slim.min.js"></script>
-    <script src="../javascript/days/day01.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/days/day01_words.js" defer></script>
+    <script src="../javascript/days/day01.js" defer></script>
 </head>
 <body>
-<div id="main">
-    <h2>Frohe Weihnachten</h2>
-    <div class="audio-container">
-        <audio controls >
-            <source src="../assets/audio/audio-day01.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+<div class="container">
+    <h2>Word Scramble</h2>
+    <div class="content">
+        <p class="word"></p>
+        <div class="details">
+            <p class="hint">Hint: <span></span></p>
+            <p class="time">Time Left: <span><b>30</b>s</span></p>
+        </div>
+        <input type="text" spellcheck="false" placeholder="Enter a valid word">
+        <div class="buttons">
+            <button class="refresh-word">Refresh Word</button>
+            <button class="check-word">Check Word</button>
+        </div>
     </div>
 </div>
 </body>
