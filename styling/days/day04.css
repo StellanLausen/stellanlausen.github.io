@@ -20,18 +20,16 @@ main {
 }
 main .image-container {
   position: absolute;
-  width: 90dvw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 main .image-container .image {
-  height: 39.5dvw;
-  width: 45dvw;
+  height: 20dvh;
+  width: 22.5dvh;
 }
 main .image-container .image img {
-  height: 39.5dvw;
-  width: 45dvw;
+  height: 20dvh;
+  width: 22.5dvh;
 }
 main .image-container .freeSlice img {
   display: none;

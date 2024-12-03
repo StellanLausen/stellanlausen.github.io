@@ -24,19 +24,23 @@ main {
   .image-container {
     position: absolute;
     //height: 80dvh;
-    width: 90dvw;
+    //width: 90dvw;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     .image {
-      height: 39.5dvw;
-      width: 45dvw;
+      height: 20dvh;
+      width: 22.5dvh;
 
       img {
-        height: 39.5dvw;
-        width: 45dvw;
+        height: 20dvh;
+        width: 22.5dvh;
+        // 1125 = 45
+        // 1000 = ?
+
+        // 1000 = 20
+        // 1125 = 22,5
       }
     }
 
