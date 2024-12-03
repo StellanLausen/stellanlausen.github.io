@@ -103,5 +103,6 @@ function checkResult() {
 
     if (result === 8){
         $(".freeSlice").removeClass('freeSlice');
+        $(".image-container").after('<div class="pyro"> <div class="before"></div> <div class="after"></div></div>');
     }
 }
