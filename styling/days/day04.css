@@ -1,0 +1,56 @@
+@import '../dist/animation.css';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222226;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100dvw;
+}
+main .image-container {
+  position: absolute;
+  width: 90dvw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .image-container .image {
+  height: 39.5dvw;
+  width: 45dvw;
+}
+main .image-container .image img {
+  height: 39.5dvw;
+  width: 45dvw;
+}
+main .image-container .freeSlice img {
+  display: none;
+}
+main .controls-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .controls-container .middleButtons {
+  display: flex;
+  flex-direction: column;
+}
+main .controls-container button {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  background-color: #c2c2c2;
+}
+
+/*# sourceMappingURL=day04.css.map */
