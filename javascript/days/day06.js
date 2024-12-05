@@ -19,10 +19,9 @@ function flipCard({target: clickedCard}) {
 }
 
 function matchCards(img1, img2) {
-    console.log("asd")
     if(img1 === img2) {
         matched++;
-        if(matched == 1) {
+        if(matched == 8) {
             $(".wrapper").prepend('<div class="pyro"> <div class="before"></div> <div class="after"></div></div>');
             setTimeout(() => {
                 $(".pyro").remove();
