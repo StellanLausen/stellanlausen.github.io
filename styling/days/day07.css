@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* FONTS Start */
+.merienda {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* FONTS End */
+main {
+  color: white;
+  background-image: url("../../assets/images/xmas-christmas-santa-claus-sleigh-tree-forest-30-10-2024-1730273778-hd-wallpaper.webp");
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Merienda;
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.container p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.container .next-btn {
+  font-family: Merienda;
+  border-radius: 4px;
+  padding: 15px 25px;
+  background-color: #0ff;
+  border: none;
+  box-shadow: 0px 0px 20px 10px #0ff;
+  color: #272727;
+}
+
+/*# sourceMappingURL=day07.css.map */

@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.pyro > .before, .pyro > .after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+  -moz-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -webkit-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -o-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -ms-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+}
+
+.pyro > .after {
+  -moz-animation-delay: 1.25s, 1.25s, 1.25s;
+  -webkit-animation-delay: 1.25s, 1.25s, 1.25s;
+  -o-animation-delay: 1.25s, 1.25s, 1.25s;
+  -ms-animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  -moz-animation-duration: 1.25s, 1.25s, 6.25s;
+  -webkit-animation-duration: 1.25s, 1.25s, 6.25s;
+  -o-animation-duration: 1.25s, 1.25s, 6.25s;
+  -ms-animation-duration: 1.25s, 1.25s, 6.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s;
+}
+
+@-webkit-keyframes bang {
+  to {
+    box-shadow: -117px -129.6666666667px hsl(83, 100%, 50%), -139px 64.3333333333px hsl(151, 100%, 50%), -20px -309.6666666667px hsl(35, 100%, 50%), 195px -357.6666666667px hsl(99, 100%, 50%), -105px -298.6666666667px hsl(119, 100%, 50%), -238px 71.3333333333px hsl(74, 100%, 50%), 222px -150.6666666667px hsl(76, 100%, 50%), 215px -378.6666666667px hsl(313, 100%, 50%), 234px -275.6666666667px hsl(348, 100%, 50%), -6px -78.6666666667px hsl(39, 100%, 50%), 41px -57.6666666667px hsl(159, 100%, 50%), 231px -52.6666666667px hsl(164, 100%, 50%), -128px 36.3333333333px hsl(215, 100%, 50%), 242px -204.6666666667px hsl(266, 100%, 50%), -49px -115.6666666667px hsl(152, 100%, 50%), -15px -67.6666666667px hsl(166, 100%, 50%), -247px -250.6666666667px hsl(12, 100%, 50%), -36px -185.6666666667px hsl(105, 100%, 50%), 45px -285.6666666667px hsl(69, 100%, 50%), 101px -167.6666666667px hsl(19, 100%, 50%), 48px -114.6666666667px hsl(347, 100%, 50%), -58px -35.6666666667px hsl(185, 100%, 50%), 134px -233.6666666667px hsl(66, 100%, 50%), 165px -322.6666666667px hsl(101, 100%, 50%), 233px 68.3333333333px hsl(260, 100%, 50%), -128px -315.6666666667px hsl(115, 100%, 50%), -70px -241.6666666667px hsl(140, 100%, 50%), 235px 27.3333333333px hsl(41, 100%, 50%), -45px -276.6666666667px hsl(258, 100%, 50%), -72px -182.6666666667px hsl(262, 100%, 50%), 67px -173.6666666667px hsl(275, 100%, 50%), 9px -265.6666666667px hsl(296, 100%, 50%), -122px -165.6666666667px hsl(91, 100%, 50%), 50px -326.6666666667px hsl(248, 100%, 50%), 91px -138.6666666667px hsl(304, 100%, 50%), -68px -91.6666666667px hsl(276, 100%, 50%), 189px -415.6666666667px hsl(68, 100%, 50%), -67px -405.6666666667px hsl(46, 100%, 50%), 172px -213.6666666667px hsl(42, 100%, 50%), -145px 46.3333333333px hsl(166, 100%, 50%), -192px -247.6666666667px hsl(333, 100%, 50%), -243px 83.3333333333px hsl(95, 100%, 50%), 28px 59.3333333333px hsl(118, 100%, 50%), -22px -93.6666666667px hsl(77, 100%, 50%), -236px -245.6666666667px hsl(268, 100%, 50%), 135px -132.6666666667px hsl(66, 100%, 50%), -183px -328.6666666667px hsl(171, 100%, 50%), 185px 40.3333333333px hsl(65, 100%, 50%), -91px -190.6666666667px hsl(269, 100%, 50%), 28px -305.6666666667px hsl(303, 100%, 50%), 56px -193.6666666667px hsl(262, 100%, 50%);
+  }
+}
+@-moz-keyframes bang {
+  to {
+    box-shadow: -117px -129.6666666667px hsl(83, 100%, 50%), -139px 64.3333333333px hsl(151, 100%, 50%), -20px -309.6666666667px hsl(35, 100%, 50%), 195px -357.6666666667px hsl(99, 100%, 50%), -105px -298.6666666667px hsl(119, 100%, 50%), -238px 71.3333333333px hsl(74, 100%, 50%), 222px -150.6666666667px hsl(76, 100%, 50%), 215px -378.6666666667px hsl(313, 100%, 50%), 234px -275.6666666667px hsl(348, 100%, 50%), -6px -78.6666666667px hsl(39, 100%, 50%), 41px -57.6666666667px hsl(159, 100%, 50%), 231px -52.6666666667px hsl(164, 100%, 50%), -128px 36.3333333333px hsl(215, 100%, 50%), 242px -204.6666666667px hsl(266, 100%, 50%), -49px -115.6666666667px hsl(152, 100%, 50%), -15px -67.6666666667px hsl(166, 100%, 50%), -247px -250.6666666667px hsl(12, 100%, 50%), -36px -185.6666666667px hsl(105, 100%, 50%), 45px -285.6666666667px hsl(69, 100%, 50%), 101px -167.6666666667px hsl(19, 100%, 50%), 48px -114.6666666667px hsl(347, 100%, 50%), -58px -35.6666666667px hsl(185, 100%, 50%), 134px -233.6666666667px hsl(66, 100%, 50%), 165px -322.6666666667px hsl(101, 100%, 50%), 233px 68.3333333333px hsl(260, 100%, 50%), -128px -315.6666666667px hsl(115, 100%, 50%), -70px -241.6666666667px hsl(140, 100%, 50%), 235px 27.3333333333px hsl(41, 100%, 50%), -45px -276.6666666667px hsl(258, 100%, 50%), -72px -182.6666666667px hsl(262, 100%, 50%), 67px -173.6666666667px hsl(275, 100%, 50%), 9px -265.6666666667px hsl(296, 100%, 50%), -122px -165.6666666667px hsl(91, 100%, 50%), 50px -326.6666666667px hsl(248, 100%, 50%), 91px -138.6666666667px hsl(304, 100%, 50%), -68px -91.6666666667px hsl(276, 100%, 50%), 189px -415.6666666667px hsl(68, 100%, 50%), -67px -405.6666666667px hsl(46, 100%, 50%), 172px -213.6666666667px hsl(42, 100%, 50%), -145px 46.3333333333px hsl(166, 100%, 50%), -192px -247.6666666667px hsl(333, 100%, 50%), -243px 83.3333333333px hsl(95, 100%, 50%), 28px 59.3333333333px hsl(118, 100%, 50%), -22px -93.6666666667px hsl(77, 100%, 50%), -236px -245.6666666667px hsl(268, 100%, 50%), 135px -132.6666666667px hsl(66, 100%, 50%), -183px -328.6666666667px hsl(171, 100%, 50%), 185px 40.3333333333px hsl(65, 100%, 50%), -91px -190.6666666667px hsl(269, 100%, 50%), 28px -305.6666666667px hsl(303, 100%, 50%), 56px -193.6666666667px hsl(262, 100%, 50%);
+  }
+}
+@-o-keyframes bang {
+  to {
+    box-shadow: -117px -129.6666666667px hsl(83, 100%, 50%), -139px 64.3333333333px hsl(151, 100%, 50%), -20px -309.6666666667px hsl(35, 100%, 50%), 195px -357.6666666667px hsl(99, 100%, 50%), -105px -298.6666666667px hsl(119, 100%, 50%), -238px 71.3333333333px hsl(74, 100%, 50%), 222px -150.6666666667px hsl(76, 100%, 50%), 215px -378.6666666667px hsl(313, 100%, 50%), 234px -275.6666666667px hsl(348, 100%, 50%), -6px -78.6666666667px hsl(39, 100%, 50%), 41px -57.6666666667px hsl(159, 100%, 50%), 231px -52.6666666667px hsl(164, 100%, 50%), -128px 36.3333333333px hsl(215, 100%, 50%), 242px -204.6666666667px hsl(266, 100%, 50%), -49px -115.6666666667px hsl(152, 100%, 50%), -15px -67.6666666667px hsl(166, 100%, 50%), -247px -250.6666666667px hsl(12, 100%, 50%), -36px -185.6666666667px hsl(105, 100%, 50%), 45px -285.6666666667px hsl(69, 100%, 50%), 101px -167.6666666667px hsl(19, 100%, 50%), 48px -114.6666666667px hsl(347, 100%, 50%), -58px -35.6666666667px hsl(185, 100%, 50%), 134px -233.6666666667px hsl(66, 100%, 50%), 165px -322.6666666667px hsl(101, 100%, 50%), 233px 68.3333333333px hsl(260, 100%, 50%), -128px -315.6666666667px hsl(115, 100%, 50%), -70px -241.6666666667px hsl(140, 100%, 50%), 235px 27.3333333333px hsl(41, 100%, 50%), -45px -276.6666666667px hsl(258, 100%, 50%), -72px -182.6666666667px hsl(262, 100%, 50%), 67px -173.6666666667px hsl(275, 100%, 50%), 9px -265.6666666667px hsl(296, 100%, 50%), -122px -165.6666666667px hsl(91, 100%, 50%), 50px -326.6666666667px hsl(248, 100%, 50%), 91px -138.6666666667px hsl(304, 100%, 50%), -68px -91.6666666667px hsl(276, 100%, 50%), 189px -415.6666666667px hsl(68, 100%, 50%), -67px -405.6666666667px hsl(46, 100%, 50%), 172px -213.6666666667px hsl(42, 100%, 50%), -145px 46.3333333333px hsl(166, 100%, 50%), -192px -247.6666666667px hsl(333, 100%, 50%), -243px 83.3333333333px hsl(95, 100%, 50%), 28px 59.3333333333px hsl(118, 100%, 50%), -22px -93.6666666667px hsl(77, 100%, 50%), -236px -245.6666666667px hsl(268, 100%, 50%), 135px -132.6666666667px hsl(66, 100%, 50%), -183px -328.6666666667px hsl(171, 100%, 50%), 185px 40.3333333333px hsl(65, 100%, 50%), -91px -190.6666666667px hsl(269, 100%, 50%), 28px -305.6666666667px hsl(303, 100%, 50%), 56px -193.6666666667px hsl(262, 100%, 50%);
+  }
+}
+@-ms-keyframes bang {
+  to {
+    box-shadow: -117px -129.6666666667px hsl(83, 100%, 50%), -139px 64.3333333333px hsl(151, 100%, 50%), -20px -309.6666666667px hsl(35, 100%, 50%), 195px -357.6666666667px hsl(99, 100%, 50%), -105px -298.6666666667px hsl(119, 100%, 50%), -238px 71.3333333333px hsl(74, 100%, 50%), 222px -150.6666666667px hsl(76, 100%, 50%), 215px -378.6666666667px hsl(313, 100%, 50%), 234px -275.6666666667px hsl(348, 100%, 50%), -6px -78.6666666667px hsl(39, 100%, 50%), 41px -57.6666666667px hsl(159, 100%, 50%), 231px -52.6666666667px hsl(164, 100%, 50%), -128px 36.3333333333px hsl(215, 100%, 50%), 242px -204.6666666667px hsl(266, 100%, 50%), -49px -115.6666666667px hsl(152, 100%, 50%), -15px -67.6666666667px hsl(166, 100%, 50%), -247px -250.6666666667px hsl(12, 100%, 50%), -36px -185.6666666667px hsl(105, 100%, 50%), 45px -285.6666666667px hsl(69, 100%, 50%), 101px -167.6666666667px hsl(19, 100%, 50%), 48px -114.6666666667px hsl(347, 100%, 50%), -58px -35.6666666667px hsl(185, 100%, 50%), 134px -233.6666666667px hsl(66, 100%, 50%), 165px -322.6666666667px hsl(101, 100%, 50%), 233px 68.3333333333px hsl(260, 100%, 50%), -128px -315.6666666667px hsl(115, 100%, 50%), -70px -241.6666666667px hsl(140, 100%, 50%), 235px 27.3333333333px hsl(41, 100%, 50%), -45px -276.6666666667px hsl(258, 100%, 50%), -72px -182.6666666667px hsl(262, 100%, 50%), 67px -173.6666666667px hsl(275, 100%, 50%), 9px -265.6666666667px hsl(296, 100%, 50%), -122px -165.6666666667px hsl(91, 100%, 50%), 50px -326.6666666667px hsl(248, 100%, 50%), 91px -138.6666666667px hsl(304, 100%, 50%), -68px -91.6666666667px hsl(276, 100%, 50%), 189px -415.6666666667px hsl(68, 100%, 50%), -67px -405.6666666667px hsl(46, 100%, 50%), 172px -213.6666666667px hsl(42, 100%, 50%), -145px 46.3333333333px hsl(166, 100%, 50%), -192px -247.6666666667px hsl(333, 100%, 50%), -243px 83.3333333333px hsl(95, 100%, 50%), 28px 59.3333333333px hsl(118, 100%, 50%), -22px -93.6666666667px hsl(77, 100%, 50%), -236px -245.6666666667px hsl(268, 100%, 50%), 135px -132.6666666667px hsl(66, 100%, 50%), -183px -328.6666666667px hsl(171, 100%, 50%), 185px 40.3333333333px hsl(65, 100%, 50%), -91px -190.6666666667px hsl(269, 100%, 50%), 28px -305.6666666667px hsl(303, 100%, 50%), 56px -193.6666666667px hsl(262, 100%, 50%);
+  }
+}
+@keyframes bang {
+  to {
+    box-shadow: -117px -129.6666666667px hsl(83, 100%, 50%), -139px 64.3333333333px hsl(151, 100%, 50%), -20px -309.6666666667px hsl(35, 100%, 50%), 195px -357.6666666667px hsl(99, 100%, 50%), -105px -298.6666666667px hsl(119, 100%, 50%), -238px 71.3333333333px hsl(74, 100%, 50%), 222px -150.6666666667px hsl(76, 100%, 50%), 215px -378.6666666667px hsl(313, 100%, 50%), 234px -275.6666666667px hsl(348, 100%, 50%), -6px -78.6666666667px hsl(39, 100%, 50%), 41px -57.6666666667px hsl(159, 100%, 50%), 231px -52.6666666667px hsl(164, 100%, 50%), -128px 36.3333333333px hsl(215, 100%, 50%), 242px -204.6666666667px hsl(266, 100%, 50%), -49px -115.6666666667px hsl(152, 100%, 50%), -15px -67.6666666667px hsl(166, 100%, 50%), -247px -250.6666666667px hsl(12, 100%, 50%), -36px -185.6666666667px hsl(105, 100%, 50%), 45px -285.6666666667px hsl(69, 100%, 50%), 101px -167.6666666667px hsl(19, 100%, 50%), 48px -114.6666666667px hsl(347, 100%, 50%), -58px -35.6666666667px hsl(185, 100%, 50%), 134px -233.6666666667px hsl(66, 100%, 50%), 165px -322.6666666667px hsl(101, 100%, 50%), 233px 68.3333333333px hsl(260, 100%, 50%), -128px -315.6666666667px hsl(115, 100%, 50%), -70px -241.6666666667px hsl(140, 100%, 50%), 235px 27.3333333333px hsl(41, 100%, 50%), -45px -276.6666666667px hsl(258, 100%, 50%), -72px -182.6666666667px hsl(262, 100%, 50%), 67px -173.6666666667px hsl(275, 100%, 50%), 9px -265.6666666667px hsl(296, 100%, 50%), -122px -165.6666666667px hsl(91, 100%, 50%), 50px -326.6666666667px hsl(248, 100%, 50%), 91px -138.6666666667px hsl(304, 100%, 50%), -68px -91.6666666667px hsl(276, 100%, 50%), 189px -415.6666666667px hsl(68, 100%, 50%), -67px -405.6666666667px hsl(46, 100%, 50%), 172px -213.6666666667px hsl(42, 100%, 50%), -145px 46.3333333333px hsl(166, 100%, 50%), -192px -247.6666666667px hsl(333, 100%, 50%), -243px 83.3333333333px hsl(95, 100%, 50%), 28px 59.3333333333px hsl(118, 100%, 50%), -22px -93.6666666667px hsl(77, 100%, 50%), -236px -245.6666666667px hsl(268, 100%, 50%), 135px -132.6666666667px hsl(66, 100%, 50%), -183px -328.6666666667px hsl(171, 100%, 50%), 185px 40.3333333333px hsl(65, 100%, 50%), -91px -190.6666666667px hsl(269, 100%, 50%), 28px -305.6666666667px hsl(303, 100%, 50%), 56px -193.6666666667px hsl(262, 100%, 50%);
+  }
+}
+@-webkit-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-o-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-ms-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-moz-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-o-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-ms-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+
+/*# sourceMappingURL=fireworks.css.map */
