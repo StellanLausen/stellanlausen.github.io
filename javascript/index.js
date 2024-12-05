@@ -3,17 +3,21 @@ const today = new Date().getDate();
 // const today = 20;
 
 $(document).ready(function() {
-    init();
-});
+    if(today === 8){
+        $('#main').css('background-image', 'url("../assets/images/2400-christmas-new-year-festive-beautiful-winter-snow-covered-trees-christmas-trees-background.jpg"');
+    }
 
-function init() {
     shuffleDoors();
     applyLayout();
 
     // add EventListener
-    initDoorAnimation()
-}
+    initDoorAnimation();
 
+    if(today === 8) {
+        $('.grid-item').css('color', '#444');
+        $('.grid-item').css('border-color', '#444');
+    };
+});
 function initDoorAnimation() {
     var doorArr = Array.from(document.querySelectorAll(".door"));
 
