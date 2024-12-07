@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+body {
+  font-family: "Sora", sans-serif;
+  height: 100dvh;
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: hidden;
+  background-color: #110f18;
+  background-image: url("../../assets/images/1348846.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title img {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  height: 64px;
+  width: 64px;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 5vh;
+  background-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.container {
+  margin: 2rem 4rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.back-button {
+  display: grid;
+  width: 250px;
+  place-content: center;
+  padding: 10px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 7px;
+  border-bottom-left-radius: 0;
+  background-color: #ffacac;
+  color: #2c2c2c;
+  transition: all 0.3s;
+  transition: box-shadow 0.1s;
+  border: none;
+}
+
+.back-button:hover {
+  border-radius: 0px;
+  color: #2c2c2c;
+  background-color: #ffe5e5;
+  animation: animatedBackground 5s linear infinite alternate;
+}
+
+.back-button:active {
+  box-shadow: 0 0 12px white;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+#score {
+  margin-right: 2rem;
+}
+
+.grid {
+  max-height: 28vw;
+  max-width: 28vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 9vw;
+  width: 9vw;
+  border: 1px solid #ffe5e5;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 172, 172, 0.3019607843);
+}
+
+.mole {
+  cursor: pointer;
+  height: 9vw;
+  width: 9vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  height: 9vw;
+  width: 9vw;
+  margin-top: 9vw;
+  transition: all 0.5s;
+}
+
+.button-start {
+  margin-top: 2rem;
+}
+
+#start-button {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 751px) {
+  .grid {
+    max-height: 90vw;
+    max-width: 59vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    height: 19vw;
+    width: 19vw;
+    margin-top: 19vw;
+  }
+  .square {
+    height: 19vw;
+    width: 19vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 1.1em;
+  }
+}
+
+/*# sourceMappingURL=day09.css.map */
