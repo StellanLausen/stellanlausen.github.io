@@ -1,0 +1,276 @@
+@import '../dist/animation.css';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS Start */
+.merienda {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* FONTS End */
+body {
+  background-color: #222226;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100dvw;
+}
+main .image-container, main .number-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .image-container .image, main .number-container .image {
+  width: 20dvh;
+  height: 13.2dvh;
+}
+main .image-container .image img, main .number-container .image img {
+  width: 20dvh;
+  height: 13.2dvh;
+}
+main .image-container .number, main .number-container .number {
+  width: 20dvh;
+  height: 13.2dvh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: Merienda;
+}
+main .image-container .freeSlice img, main .number-container .freeSlice img {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+.pyro > .before, .pyro > .after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+  -moz-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -webkit-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -o-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -ms-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+}
+
+.pyro > .after {
+  -moz-animation-delay: 1.25s, 1.25s, 1.25s;
+  -webkit-animation-delay: 1.25s, 1.25s, 1.25s;
+  -o-animation-delay: 1.25s, 1.25s, 1.25s;
+  -ms-animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  -moz-animation-duration: 1.25s, 1.25s, 6.25s;
+  -webkit-animation-duration: 1.25s, 1.25s, 6.25s;
+  -o-animation-duration: 1.25s, 1.25s, 6.25s;
+  -ms-animation-duration: 1.25s, 1.25s, 6.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s;
+}
+
+@-webkit-keyframes bang {
+  to {
+    box-shadow: -181px -332.6666666667px hsl(202, 100%, 50%), 70px -339.6666666667px hsl(314, 100%, 50%), 63px -363.6666666667px hsl(97, 100%, 50%), -164px -146.6666666667px hsl(67, 100%, 50%), 49px -328.6666666667px hsl(104, 100%, 50%), -174px -363.6666666667px hsl(231, 100%, 50%), -230px -288.6666666667px hsl(46, 100%, 50%), 105px -240.6666666667px hsl(224, 100%, 50%), -47px -209.6666666667px hsl(184, 100%, 50%), -8px -38.6666666667px hsl(285, 100%, 50%), 71px -344.6666666667px hsl(200, 100%, 50%), -91px -172.6666666667px hsl(208, 100%, 50%), -194px -159.6666666667px hsl(134, 100%, 50%), 131px -255.6666666667px hsl(312, 100%, 50%), 194px -269.6666666667px hsl(345, 100%, 50%), 204px -42.6666666667px hsl(47, 100%, 50%), -52px -381.6666666667px hsl(40, 100%, 50%), 61px -167.6666666667px hsl(130, 100%, 50%), -229px -0.6666666667px hsl(299, 100%, 50%), 81px 58.3333333333px hsl(265, 100%, 50%), 50px -127.6666666667px hsl(345, 100%, 50%), 7px -305.6666666667px hsl(268, 100%, 50%), 247px 48.3333333333px hsl(23, 100%, 50%), -245px -108.6666666667px hsl(334, 100%, 50%), 34px -316.6666666667px hsl(2, 100%, 50%), 102px 78.3333333333px hsl(221, 100%, 50%), 140px -125.6666666667px hsl(49, 100%, 50%), 90px 27.3333333333px hsl(14, 100%, 50%), 98px -66.6666666667px hsl(358, 100%, 50%), 232px -364.6666666667px hsl(174, 100%, 50%), 60px -267.6666666667px hsl(36, 100%, 50%), -131px -141.6666666667px hsl(52, 100%, 50%), -107px 19.3333333333px hsl(13, 100%, 50%), -242px -25.6666666667px hsl(309, 100%, 50%), 158px -233.6666666667px hsl(314, 100%, 50%), 5px -308.6666666667px hsl(35, 100%, 50%), 198px -63.6666666667px hsl(184, 100%, 50%), -89px -354.6666666667px hsl(194, 100%, 50%), -125px -226.6666666667px hsl(135, 100%, 50%), 10px -371.6666666667px hsl(186, 100%, 50%), -53px 0.3333333333px hsl(62, 100%, 50%), 230px -100.6666666667px hsl(345, 100%, 50%), 192px -170.6666666667px hsl(213, 100%, 50%), 26px -285.6666666667px hsl(276, 100%, 50%), -20px -412.6666666667px hsl(240, 100%, 50%), -101px -117.6666666667px hsl(332, 100%, 50%), 187px -24.6666666667px hsl(294, 100%, 50%), -9px -102.6666666667px hsl(212, 100%, 50%), 160px -47.6666666667px hsl(302, 100%, 50%), 194px -407.6666666667px hsl(241, 100%, 50%), -14px -155.6666666667px hsl(116, 100%, 50%);
+  }
+}
+@-moz-keyframes bang {
+  to {
+    box-shadow: -181px -332.6666666667px hsl(202, 100%, 50%), 70px -339.6666666667px hsl(314, 100%, 50%), 63px -363.6666666667px hsl(97, 100%, 50%), -164px -146.6666666667px hsl(67, 100%, 50%), 49px -328.6666666667px hsl(104, 100%, 50%), -174px -363.6666666667px hsl(231, 100%, 50%), -230px -288.6666666667px hsl(46, 100%, 50%), 105px -240.6666666667px hsl(224, 100%, 50%), -47px -209.6666666667px hsl(184, 100%, 50%), -8px -38.6666666667px hsl(285, 100%, 50%), 71px -344.6666666667px hsl(200, 100%, 50%), -91px -172.6666666667px hsl(208, 100%, 50%), -194px -159.6666666667px hsl(134, 100%, 50%), 131px -255.6666666667px hsl(312, 100%, 50%), 194px -269.6666666667px hsl(345, 100%, 50%), 204px -42.6666666667px hsl(47, 100%, 50%), -52px -381.6666666667px hsl(40, 100%, 50%), 61px -167.6666666667px hsl(130, 100%, 50%), -229px -0.6666666667px hsl(299, 100%, 50%), 81px 58.3333333333px hsl(265, 100%, 50%), 50px -127.6666666667px hsl(345, 100%, 50%), 7px -305.6666666667px hsl(268, 100%, 50%), 247px 48.3333333333px hsl(23, 100%, 50%), -245px -108.6666666667px hsl(334, 100%, 50%), 34px -316.6666666667px hsl(2, 100%, 50%), 102px 78.3333333333px hsl(221, 100%, 50%), 140px -125.6666666667px hsl(49, 100%, 50%), 90px 27.3333333333px hsl(14, 100%, 50%), 98px -66.6666666667px hsl(358, 100%, 50%), 232px -364.6666666667px hsl(174, 100%, 50%), 60px -267.6666666667px hsl(36, 100%, 50%), -131px -141.6666666667px hsl(52, 100%, 50%), -107px 19.3333333333px hsl(13, 100%, 50%), -242px -25.6666666667px hsl(309, 100%, 50%), 158px -233.6666666667px hsl(314, 100%, 50%), 5px -308.6666666667px hsl(35, 100%, 50%), 198px -63.6666666667px hsl(184, 100%, 50%), -89px -354.6666666667px hsl(194, 100%, 50%), -125px -226.6666666667px hsl(135, 100%, 50%), 10px -371.6666666667px hsl(186, 100%, 50%), -53px 0.3333333333px hsl(62, 100%, 50%), 230px -100.6666666667px hsl(345, 100%, 50%), 192px -170.6666666667px hsl(213, 100%, 50%), 26px -285.6666666667px hsl(276, 100%, 50%), -20px -412.6666666667px hsl(240, 100%, 50%), -101px -117.6666666667px hsl(332, 100%, 50%), 187px -24.6666666667px hsl(294, 100%, 50%), -9px -102.6666666667px hsl(212, 100%, 50%), 160px -47.6666666667px hsl(302, 100%, 50%), 194px -407.6666666667px hsl(241, 100%, 50%), -14px -155.6666666667px hsl(116, 100%, 50%);
+  }
+}
+@-o-keyframes bang {
+  to {
+    box-shadow: -181px -332.6666666667px hsl(202, 100%, 50%), 70px -339.6666666667px hsl(314, 100%, 50%), 63px -363.6666666667px hsl(97, 100%, 50%), -164px -146.6666666667px hsl(67, 100%, 50%), 49px -328.6666666667px hsl(104, 100%, 50%), -174px -363.6666666667px hsl(231, 100%, 50%), -230px -288.6666666667px hsl(46, 100%, 50%), 105px -240.6666666667px hsl(224, 100%, 50%), -47px -209.6666666667px hsl(184, 100%, 50%), -8px -38.6666666667px hsl(285, 100%, 50%), 71px -344.6666666667px hsl(200, 100%, 50%), -91px -172.6666666667px hsl(208, 100%, 50%), -194px -159.6666666667px hsl(134, 100%, 50%), 131px -255.6666666667px hsl(312, 100%, 50%), 194px -269.6666666667px hsl(345, 100%, 50%), 204px -42.6666666667px hsl(47, 100%, 50%), -52px -381.6666666667px hsl(40, 100%, 50%), 61px -167.6666666667px hsl(130, 100%, 50%), -229px -0.6666666667px hsl(299, 100%, 50%), 81px 58.3333333333px hsl(265, 100%, 50%), 50px -127.6666666667px hsl(345, 100%, 50%), 7px -305.6666666667px hsl(268, 100%, 50%), 247px 48.3333333333px hsl(23, 100%, 50%), -245px -108.6666666667px hsl(334, 100%, 50%), 34px -316.6666666667px hsl(2, 100%, 50%), 102px 78.3333333333px hsl(221, 100%, 50%), 140px -125.6666666667px hsl(49, 100%, 50%), 90px 27.3333333333px hsl(14, 100%, 50%), 98px -66.6666666667px hsl(358, 100%, 50%), 232px -364.6666666667px hsl(174, 100%, 50%), 60px -267.6666666667px hsl(36, 100%, 50%), -131px -141.6666666667px hsl(52, 100%, 50%), -107px 19.3333333333px hsl(13, 100%, 50%), -242px -25.6666666667px hsl(309, 100%, 50%), 158px -233.6666666667px hsl(314, 100%, 50%), 5px -308.6666666667px hsl(35, 100%, 50%), 198px -63.6666666667px hsl(184, 100%, 50%), -89px -354.6666666667px hsl(194, 100%, 50%), -125px -226.6666666667px hsl(135, 100%, 50%), 10px -371.6666666667px hsl(186, 100%, 50%), -53px 0.3333333333px hsl(62, 100%, 50%), 230px -100.6666666667px hsl(345, 100%, 50%), 192px -170.6666666667px hsl(213, 100%, 50%), 26px -285.6666666667px hsl(276, 100%, 50%), -20px -412.6666666667px hsl(240, 100%, 50%), -101px -117.6666666667px hsl(332, 100%, 50%), 187px -24.6666666667px hsl(294, 100%, 50%), -9px -102.6666666667px hsl(212, 100%, 50%), 160px -47.6666666667px hsl(302, 100%, 50%), 194px -407.6666666667px hsl(241, 100%, 50%), -14px -155.6666666667px hsl(116, 100%, 50%);
+  }
+}
+@-ms-keyframes bang {
+  to {
+    box-shadow: -181px -332.6666666667px hsl(202, 100%, 50%), 70px -339.6666666667px hsl(314, 100%, 50%), 63px -363.6666666667px hsl(97, 100%, 50%), -164px -146.6666666667px hsl(67, 100%, 50%), 49px -328.6666666667px hsl(104, 100%, 50%), -174px -363.6666666667px hsl(231, 100%, 50%), -230px -288.6666666667px hsl(46, 100%, 50%), 105px -240.6666666667px hsl(224, 100%, 50%), -47px -209.6666666667px hsl(184, 100%, 50%), -8px -38.6666666667px hsl(285, 100%, 50%), 71px -344.6666666667px hsl(200, 100%, 50%), -91px -172.6666666667px hsl(208, 100%, 50%), -194px -159.6666666667px hsl(134, 100%, 50%), 131px -255.6666666667px hsl(312, 100%, 50%), 194px -269.6666666667px hsl(345, 100%, 50%), 204px -42.6666666667px hsl(47, 100%, 50%), -52px -381.6666666667px hsl(40, 100%, 50%), 61px -167.6666666667px hsl(130, 100%, 50%), -229px -0.6666666667px hsl(299, 100%, 50%), 81px 58.3333333333px hsl(265, 100%, 50%), 50px -127.6666666667px hsl(345, 100%, 50%), 7px -305.6666666667px hsl(268, 100%, 50%), 247px 48.3333333333px hsl(23, 100%, 50%), -245px -108.6666666667px hsl(334, 100%, 50%), 34px -316.6666666667px hsl(2, 100%, 50%), 102px 78.3333333333px hsl(221, 100%, 50%), 140px -125.6666666667px hsl(49, 100%, 50%), 90px 27.3333333333px hsl(14, 100%, 50%), 98px -66.6666666667px hsl(358, 100%, 50%), 232px -364.6666666667px hsl(174, 100%, 50%), 60px -267.6666666667px hsl(36, 100%, 50%), -131px -141.6666666667px hsl(52, 100%, 50%), -107px 19.3333333333px hsl(13, 100%, 50%), -242px -25.6666666667px hsl(309, 100%, 50%), 158px -233.6666666667px hsl(314, 100%, 50%), 5px -308.6666666667px hsl(35, 100%, 50%), 198px -63.6666666667px hsl(184, 100%, 50%), -89px -354.6666666667px hsl(194, 100%, 50%), -125px -226.6666666667px hsl(135, 100%, 50%), 10px -371.6666666667px hsl(186, 100%, 50%), -53px 0.3333333333px hsl(62, 100%, 50%), 230px -100.6666666667px hsl(345, 100%, 50%), 192px -170.6666666667px hsl(213, 100%, 50%), 26px -285.6666666667px hsl(276, 100%, 50%), -20px -412.6666666667px hsl(240, 100%, 50%), -101px -117.6666666667px hsl(332, 100%, 50%), 187px -24.6666666667px hsl(294, 100%, 50%), -9px -102.6666666667px hsl(212, 100%, 50%), 160px -47.6666666667px hsl(302, 100%, 50%), 194px -407.6666666667px hsl(241, 100%, 50%), -14px -155.6666666667px hsl(116, 100%, 50%);
+  }
+}
+@keyframes bang {
+  to {
+    box-shadow: -181px -332.6666666667px hsl(202, 100%, 50%), 70px -339.6666666667px hsl(314, 100%, 50%), 63px -363.6666666667px hsl(97, 100%, 50%), -164px -146.6666666667px hsl(67, 100%, 50%), 49px -328.6666666667px hsl(104, 100%, 50%), -174px -363.6666666667px hsl(231, 100%, 50%), -230px -288.6666666667px hsl(46, 100%, 50%), 105px -240.6666666667px hsl(224, 100%, 50%), -47px -209.6666666667px hsl(184, 100%, 50%), -8px -38.6666666667px hsl(285, 100%, 50%), 71px -344.6666666667px hsl(200, 100%, 50%), -91px -172.6666666667px hsl(208, 100%, 50%), -194px -159.6666666667px hsl(134, 100%, 50%), 131px -255.6666666667px hsl(312, 100%, 50%), 194px -269.6666666667px hsl(345, 100%, 50%), 204px -42.6666666667px hsl(47, 100%, 50%), -52px -381.6666666667px hsl(40, 100%, 50%), 61px -167.6666666667px hsl(130, 100%, 50%), -229px -0.6666666667px hsl(299, 100%, 50%), 81px 58.3333333333px hsl(265, 100%, 50%), 50px -127.6666666667px hsl(345, 100%, 50%), 7px -305.6666666667px hsl(268, 100%, 50%), 247px 48.3333333333px hsl(23, 100%, 50%), -245px -108.6666666667px hsl(334, 100%, 50%), 34px -316.6666666667px hsl(2, 100%, 50%), 102px 78.3333333333px hsl(221, 100%, 50%), 140px -125.6666666667px hsl(49, 100%, 50%), 90px 27.3333333333px hsl(14, 100%, 50%), 98px -66.6666666667px hsl(358, 100%, 50%), 232px -364.6666666667px hsl(174, 100%, 50%), 60px -267.6666666667px hsl(36, 100%, 50%), -131px -141.6666666667px hsl(52, 100%, 50%), -107px 19.3333333333px hsl(13, 100%, 50%), -242px -25.6666666667px hsl(309, 100%, 50%), 158px -233.6666666667px hsl(314, 100%, 50%), 5px -308.6666666667px hsl(35, 100%, 50%), 198px -63.6666666667px hsl(184, 100%, 50%), -89px -354.6666666667px hsl(194, 100%, 50%), -125px -226.6666666667px hsl(135, 100%, 50%), 10px -371.6666666667px hsl(186, 100%, 50%), -53px 0.3333333333px hsl(62, 100%, 50%), 230px -100.6666666667px hsl(345, 100%, 50%), 192px -170.6666666667px hsl(213, 100%, 50%), 26px -285.6666666667px hsl(276, 100%, 50%), -20px -412.6666666667px hsl(240, 100%, 50%), -101px -117.6666666667px hsl(332, 100%, 50%), 187px -24.6666666667px hsl(294, 100%, 50%), -9px -102.6666666667px hsl(212, 100%, 50%), 160px -47.6666666667px hsl(302, 100%, 50%), 194px -407.6666666667px hsl(241, 100%, 50%), -14px -155.6666666667px hsl(116, 100%, 50%);
+  }
+}
+@-webkit-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-o-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-ms-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-moz-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-o-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-ms-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+
+/*# sourceMappingURL=day10.css.map */

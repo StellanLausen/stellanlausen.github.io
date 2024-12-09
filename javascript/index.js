@@ -39,7 +39,11 @@ function initDoorAnimation() {
 
 async function redirectToDay(){
     setTimeout(() => {
-        location.href = 'html/day0' + today + '.html';
+        if(today > 9){
+            location.href = 'html/day' + today + '.html';
+        } else {
+            location.href = 'html/day0' + today + '.html';
+        }
     }, 1000);
 
 }
