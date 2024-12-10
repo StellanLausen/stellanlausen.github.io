@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS Start */
+.merienda {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* FONTS End */
+body {
+  height: 100dvh;
+  width: 100dvw;
+  box-sizing: border-box;
+  background-image: url("../../assets/images/christmas-background-with-fir-branches-pine-cones-berries-and-stars.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20dvw;
+}
+body h2 {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0 10dvw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=day11.css.map */

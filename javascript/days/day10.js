@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function init() {
-    $('.image').click(function(event) {
+    $('.image').click(function() {
         moveSlice(getFreePositions($(this)), $(this));
     });
 }
