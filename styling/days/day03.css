@@ -16,6 +16,13 @@ body {
   background: #f6f7fb;
 }
 
+#body-container {
+  background-image: url("../../assets/images/1920-ai-generative-happy-christmas-background-with-gifts-decorations-christmas-tree-festive-banner-with-copy-space-text.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
 ::selection {
   color: #fff;
   background-color: #7d2ae8;
