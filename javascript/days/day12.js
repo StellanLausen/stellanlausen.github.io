@@ -36,7 +36,6 @@ optionImages.forEach((image, index) => {
             // Generate a random number between 0 and 2
             // let randomNumber = Math.floor(Math.random() * 3);
             let randomNumber;
-            console.log(amountOfPlayedGames%5)
 
             if(amountOfPlayedGames%5 === 0) {
                 switch(index) {
