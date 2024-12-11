@@ -20,6 +20,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+
+  #link {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #7d2ae8;
+    text-align: center;
+  }
+
+
 }
 
 ::selection {
@@ -107,7 +118,12 @@ body {
   pointer-events: none;
 }
 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 530px){
+  // for day 12
+  #body-container #link {
+      font-size: 10px;
+  }
+
   .container {
     padding: 2rem 3rem;
   }
