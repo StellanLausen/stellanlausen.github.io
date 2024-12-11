@@ -97,6 +97,7 @@ optionImages.forEach((image, index) => {
         }, 2500);
         let time2 = setTimeout(() => {
             if(amountOfPlayedGames > 15){
+                document.getElementById('link').style.display = "block"
                 alert('Die Geschichte' + toUnicodeVariant('n', 'bold sans', 'bold') + ' sind sehr mysteriös! Warum nur?');
             }
         }, 2600);
