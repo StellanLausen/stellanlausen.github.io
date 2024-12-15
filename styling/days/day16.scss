@@ -1,0 +1,93 @@
+@import '../dist/animation.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  //overflow: hidden;
+}
+
+/* FONTS Start */
+
+.merienda {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* FONTS End */
+
+body {
+  background-color: #222226;
+  height: 100dvh;
+  width: 100dvw;
+
+  background-image: url("../../assets/images/happy_birthday.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+
+  h2 {
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 15px;
+    //text-shadow: 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+    //text-shadow:1px 1px 10px #e60073, 1px 1px 10px #e60073;
+  }
+
+  h2:nth-child(1) {
+      background: -webkit-linear-gradient(#fc4668, #fca940);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  h2:nth-child(2) {
+      background: -webkit-linear-gradient(#cc118f, #cc7e09);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  h2:nth-child(3) {
+    background: -webkit-linear-gradient(#cc118f, #cc7e09);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20dvh;
+    span {
+      -webkit-text-fill-color: yellow;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    h2 {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: 675px) {
+    h2 {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
