@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS Start */
+.merienda {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* FONTS End */
+body {
+  background-color: #222226;
+  height: 100dvh;
+  width: 100dvw;
+  background-image: url("../../assets/images/1920-ai-generative-happy-christmas-background-with-gifts-decorations-christmas-tree-festive-banner-with-copy-space-text.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+body h1, body h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+body h1 {
+  font-size: 1.6rem;
+}
+body h2 {
+  font-size: 1rem;
+}
+body img {
+  width: 100vw;
+  box-shadow: 0px 10px 15px #333333;
+}
+
+/*# sourceMappingURL=day18.css.map */
