@@ -30,11 +30,10 @@ body h1, body h2 {
   margin-bottom: 30px;
 }
 body h1 {
-  font-size: 3rem;
+  font-size: 1.6rem;
 }
 body h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 1rem;
 }
 body img {
   width: 100vw;
