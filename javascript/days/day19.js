@@ -86,7 +86,7 @@ const checkWord = () => {
 
     if(userWord !== correctWord) return alert(`Oops! "${userWord}" das Wort habe ich aber nicht gemeint!`);
 
-    //alert(`Yippeee ${correctWord.toUpperCase()} ist das richtige Word!`);
+    alert(`Yippeee ${correctWord.toUpperCase()} ist das richtige Word!`);
 
     initGame();
 }
