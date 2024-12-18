@@ -3,8 +3,8 @@ const today = new Date().getDate();
 // const today = 20;
 
 $(document).ready(function() {
-    if(today === 8){
-        $('#main').css('background-image', 'url("../assets/images/2400-christmas-new-year-festive-beautiful-winter-snow-covered-trees-christmas-trees-background.jpg"');
+    if(today >= 8){
+        $('#main').css('background-image', 'url("../assets/images/2400-christmas-new-year-festive-beautiful-winter-snow-covered-tree-christmas-background.jpg"');
     }
 
     shuffleDoors();
@@ -13,9 +13,9 @@ $(document).ready(function() {
     // add EventListener
     initDoorAnimation();
 
-    if(today === 8) {
-        $('.grid-item').css('color', '#444');
-        $('.grid-item').css('border-color', '#444');
+    if(today >= 8) {
+        $('.grid-item').css('color', '#232323FF');
+        $('.grid-item').css('border-color', '#333333FF');
     };
 });
 function initDoorAnimation() {
