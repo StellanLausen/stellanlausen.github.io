@@ -33,8 +33,16 @@ let words = [
     },
     {
         word: "nallets",
-        hint: "Was ist Stellan rückwärts"
+        hint: "Was ist 'Stellan' rückwärts"
     },
+    {
+        word: "Kirsten",
+        hint: "Wie heißt meine Mutter mit Vornamen"
+    },
+    {
+        word: "Ja",
+        hint: "Werde ich mir deine Kirchenvorstellung angucken?"
+    }
 ]
 
 const wordText = document.querySelector(".word"),
@@ -47,26 +55,18 @@ let correctWord;
 let usedWords = [];
 
 const initGame = () => {
-    if(usedWords.length >= 9) {
+    if(usedWords.length >= words.length) {
         usedWords = [];
     }
 
     let randomNumber = Math.floor(Math.random() * words.length)
-    console.log("before");
-    console.log(usedWords);
 
     while(checkValInArr(randomNumber)){
         randomNumber = Math.floor(Math.random() * words.length)
     }
 
-    console.log(checkValInArr(randomNumber))
-
-
     let randomObj = words[randomNumber];
     usedWords[usedWords.length] = randomNumber
-    console.log("after ");
-    console.log(usedWords);
-    console.log("-----------");
     let wordArray = randomObj.word.split("");
     for (let i = wordArray.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
